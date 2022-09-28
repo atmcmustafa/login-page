@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Forms</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body class="h-screen flex items-center justify-center bg-slate-700 font-openSans">
+
+    <form name="contact" method="POST" data-netlify="true"
+        class="flex flex-col bg-slate-500 p-16 rounded-md  shadow-xl items-center justify-center">
+        <h1 class="font-semibold text-2xl">Sign In</h1>
+        <!-- social links -->
+        <div class="flex gap-3 items-center mt-6">
+            <div class="hover:bg-blue-600 rounded-full cursor-pointer "><i
+                    class="fa-brands fa-facebook-f rounded-full border hover:border-0 hover:text-white duration-300 border-cyan-300 p-3 text-blue-900"></i>
+            </div>
+            <div class="hover:bg-purple-600 rounded-full cursor-pointer "><i
+                    class="fa-brands fa-instagram rounded-full border hover:border-0 hover:text-white duration-300 border-purple-400 p-3 text-purple-800"></i>
+            </div>
+            <div class="hover:bg-blue-600 rounded-full cursor-pointer "><i
+                    class="fa-brands fa-twitter rounded-full border hover:border-0 hover:text-white duration-300 border-cyan-500 p-3 text-blue-500"></i>
+            </div>
+        </div>
+        <!-- input groups -->
+        <div class="flex flex-col justify-center items-center gap-4 mt-6 mx-auto w-72">
+            <input type="text" required placeholder="example@gmail.com"
+                class="px-4 py-2 rounded-md mx-auto focus:outline-none w-full text-sm bg-gray-700 text-white">
+            <input type="password" required placeholder="Password"
+                class="px-4 py-2 rounded-md mx-auto focus:outline-none w-full text-sm bg-gray-700 text-white">
+
+            <a href="#" class="text-sm text-gray-800 hover:text-white duration-500">Forgot your password?</a>
+            <button type="button"
+                class="px-12 py-3 rounded-full bg-indigo-600 text-sm text-gray-200 font-semibold hover:bg-indigo-500 duration-500">Sign
+                In</button>
+        </div>
+    </form>
+</body>
+
+</html>
